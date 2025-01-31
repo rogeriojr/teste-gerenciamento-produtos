@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Teste Frontend - Gerenciamento de Produtos
 
-## Getting Started
+📌 Objetivo
 
-First, run the development server:
+Desenvolver uma aplicação web para gerenciamento de produtos utilizando Next.js, TypeScript, Zustand para gerenciamento de estado, Tailwind CSS para estilização e consumo de API fictícia.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🛠 Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js - Framework React para SSR e SSG.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+TypeScript - Tipagem estática para maior segurança.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Zustand - Gerenciamento global de estado.
 
-## Learn More
+Tailwind CSS - Estilização moderna e responsiva.
 
-To learn more about Next.js, take a look at the following resources:
+JSONPlaceholder - Mock de API para simulação de produtos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Jest + Testing Library - Testes automatizados.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📋 Funcionalidades Implementadas
 
-## Deploy on Vercel
+✅ Listagem de Produtos com Nome, Categoria, Preço, Descrição e Imagem.✅ Cadastro de Produtos via formulário (Nome, Preço, Descrição e URL da Imagem).✅ Filtro de Busca por nome e faixa de preço.✅ Ordenação dos produtos.✅ Gerenciamento de Estado Global com Zustand.✅ Consumo de API fictícia para obtenção dos produtos.✅ Estilização Responsiva com Tailwind CSS.✅ Persistência dos Produtos no LocalStorage.✅ Testes Automatizados (1 snapshot de tela).✅ Paginação para melhor navegação.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🚀 Como Rodar o Projeto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📦 Pré-requisitos
+
+Node.js (versão 16+)
+
+npm ou yarn
+
+🔧 Instalação
+
+# Clone o repositório
+git clone https://github.com/rogeriojr/teste-gerenciamento-produtos.git
+
+# Acesse a pasta do projeto
+cd teste-gerenciamento-produtos
+
+# Instale as dependências
+npm install  # ou yarn install
+
+▶️ Rodando o Projeto
+
+npm run dev  # ou yarn dev
+
+Acesse: http://localhost:3000
+
+🌍 Deploy no Vercel
+
+O projeto está hospedado no Vercel e pode ser acessado através do link:
+🔗 Deploy no Vercel
+
+📢 Como Fazer Deploy no Vercel
+
+Caso deseje realizar o deploy do projeto, siga os passos:
+
+Crie uma conta no Vercel.
+
+Instale o CLI do Vercel (opcional):
+
+npm install -g vercel
+
+No diretório do projeto, execute:
+
+vercel
+
+Siga as instruções para configurar e implantar seu projeto.
+
+🧪 Testes
+
+Para rodar os testes automatizados:
+
+npm run test  # ou yarn test
+
+🏗 Estrutura do Projeto
+
+📂 src
+ ┣ 📂 components  # Componentes reutilizáveis
+ ┣ 📂 pages       # Páginas do Next.js
+ ┣ 📂 store       # Gerenciamento de estado com Zustand
+ ┣ 📂 styles      # Estilizações globais (Tailwind CSS)
+ ┣ 📂 utils       # Funções auxiliares e chamadas de API
+ ┗ README.md      # Documentação do projeto
+
+📜 Decisões Técnicas
+
+Next.js + TypeScript: Melhor organização e segurança na tipagem do projeto.
+
+Zustand: Gerenciamento de estado mais leve e simples que Redux.
+
+Tailwind CSS: Facilidade na estilização e responsividade.
+
+JSONPlaceholder: API fictícia para simular produtos reais.
+
+Persistência com LocalStorage: Garante que os produtos cadastrados sejam mantidos na listagem após recarregar a página.
+
+Testes com Jest: Para garantir qualidade e evitar regressões.
+
+🔥 Melhorias Futuras
+
+Implementar CRUD completo (atualização e exclusão de produtos).
+
+Melhorar acessibilidade do layout.
+
+Implementar autenticação para proteger algumas rotas.
+
+👨‍💻 Autor
+
+[Rogério Jr.] - Desenvolvedor Frontend
+
+💡 Feedbacks e sugestões são bem-vindos! 🚀# teste-gerenciamento-produtos
