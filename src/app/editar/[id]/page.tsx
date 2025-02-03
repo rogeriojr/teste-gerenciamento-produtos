@@ -49,7 +49,7 @@ const EditProduct = () => {
     } else {
       setLoading(false);
     }
-  }, [id, fetchProducts]);
+  }, [id, fetchProducts, products]);
 
   if (loading) {
     return (

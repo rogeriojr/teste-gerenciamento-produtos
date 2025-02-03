@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import useStore, { Product } from "@/store/useStore";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 
 const FALLBACK_IMAGE =
@@ -95,7 +96,7 @@ const ProductDetails: React.FC = () => {
 
           {/* Container da imagem com efeito de zoom */}
           <div className="group w-full flex justify-center items-center overflow-hidden rounded-lg">
-            <img
+            <Image
               src={
                 imageError ? FALLBACK_IMAGE : product.image || FALLBACK_IMAGE
               }
