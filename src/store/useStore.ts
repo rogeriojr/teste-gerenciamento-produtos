@@ -1,6 +1,5 @@
 import { create } from "zustand";
 
-// Tipos para os produtos
 export interface Product {
   id: number;
   name: string;
@@ -10,7 +9,6 @@ export interface Product {
   category?: string;
 }
 
-// Tipos para o estado global
 interface StoreState {
   products: Product[];
   currentPage: number;
@@ -27,10 +25,8 @@ interface StoreState {
   fetchProducts: () => Promise<void>;
 }
 
-// API Fake
 const API_URL = "https://fakestoreapi.com/products";
 
-// Criação da store com Zustand
 const useStore = create<StoreState>((set, get) => ({
   products: [],
   currentPage: 1,
@@ -41,6 +37,7 @@ const useStore = create<StoreState>((set, get) => ({
     maxPrice: null,
   },
   setProducts: (products) => {
+    console.log(get, 'get')
     set({ products });
     localStorage.setItem("products", JSON.stringify(products));
   },

@@ -1,27 +1,5 @@
-// Correção do cadastro de produtos e atualização da store Zustand
-import useStore, { Product } from "../store/useStore";
+import useStore from "../store/useStore";
 
-export const addProduct = async (
-  product: Omit<Product, "id">
-): Promise<Product> => {
-  try {
-    const newProduct = { ...product, id: Date.now() };
-
-    // Adiciona o produto à store e persiste no localStorage
-    useStore.setState((state) => {
-      const updatedProducts = [...state.products, newProduct];
-      localStorage.setItem("products", JSON.stringify(updatedProducts));
-      return { products: updatedProducts };
-    });
-
-    return newProduct;
-  } catch (error) {
-    console.error("Erro ao adicionar produto:", error);
-    throw error;
-  }
-};
-
-// Atualização na paginação
 const Pagination = () => {
   const { currentPage, itemsPerPage, setCurrentPage, products } = useStore();
   const totalPages = Math.ceil(products.length / itemsPerPage);
