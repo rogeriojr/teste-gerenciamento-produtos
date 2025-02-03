@@ -48,6 +48,7 @@ npm run dev  # ou yarn dev
 Acesse: http://localhost:3000
 
 🌍 Deploy no Vercel
+https://teste-gerenciamento-produtos-go5ff21fp-rogeriojrs-projects.vercel.app/
 
 O projeto está hospedado no Vercel e pode ser acessado através do link:
 🔗 Deploy no Vercel
