@@ -1,5 +1,7 @@
 Teste Frontend - Gerenciamento de Produtos
 
+#PRINTS
+
 ![image](https://github.com/user-attachments/assets/bb2a1081-3974-4b3a-8655-c520ca9cc879)
 
 
