@@ -1,5 +1,12 @@
 Teste Frontend - Gerenciamento de Produtos
 
+![image](https://github.com/user-attachments/assets/bb2a1081-3974-4b3a-8655-c520ca9cc879)
+
+
+![image](https://github.com/user-attachments/assets/5fae1083-ebb7-47b0-be22-097f99e1e213)
+
+
+
 📌 Objetivo
 
 Desenvolver uma aplicação web para gerenciamento de produtos utilizando Next.js, TypeScript, Zustand para gerenciamento de estado, Tailwind CSS para estilização e consumo de API fictícia.
